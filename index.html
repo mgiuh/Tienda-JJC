@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formulario">
+        <h2>Conoce nuestro buscador de componentes</h2>
+
+        <form>
+      <div class="select-container">
+        <div class="select-group">
+          <label for="presupuesto">Presupuesto</label>
+          <select id="presupuesto">
+            <option value="">Seleccione...</option>
+            <option value="500">Menos de $500</option>
+            <option value="1000">Menos de $1000</option>
+            <option value="2000">Más de $2000</option>
+          </select>
+        </div>
+
+        <div class="select-group">
+          <label for="uso">Uso principal</label>
+          <select id="uso">
+            <option value="">Seleccione...</option>
+            <option value="ofimatica">Ofimática</option>
+            <option value="gaming">Gaming</option>
+            <option value="diseño">Diseño</option>
+          </select>
+        </div>
+
+        <!-- Lista futura -->
+        <div class="select-group">
+            <label for="extra">Rendimiento</label>
+            <select id="extra">
+            <option value="">Seleccione...</option>
+            <option value="1">Basico</option>
+            <option value="2">Medio</option>
+            <option value="3">Alto</option>
+            </select>
+        </div>
+        </div>
+        <button type="submit" class="submit">Buscar</button>
+        </form>      
+    </div>
+</body>
+</html>

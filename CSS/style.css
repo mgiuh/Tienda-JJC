@@ -1,0 +1,186 @@
+body{
+    background-color: darkorange;
+    background-size: cover;         /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;    /* Centra la imagen */
+    background-repeat: no-repeat;   /* Evita que la imagen se repita */
+    background-attachment: fixed;   /* Opcional: fondo fijo al hacer scroll */
+}
+
+header {
+    background: rgba(0,0,0,0.7);
+    color: #af8f00;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.inicio {
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contenedor h3 {
+    color: blue;
+}
+
+.contenedor p {
+    color: white;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Optimización de iconos de redes sociales */
+.facebook img,
+.instagram img,
+.xapp img,
+.youtube img {
+    width: 90px;   /* Cambia el ancho del icono */
+    height: 90px;  /* Cambia el alto del icono */  
+}
+
+.enlaces-redes{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-producto{
+    background: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.producto-ssd{
+    background: #e0f7fa; /* Color de fondo específico para el producto SSD */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.formulario{
+    background-color: rgba(10, 8, 8, 0.397);
+    margin: px;
+    border-radius: 40px;
+    text-align: center;
+    height: 200px;
+}
+
+.formulario h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #9090bb;
+}
+
+.submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.select-container {
+    display: flex;
+  justify-content: center; /* Centra las listas */
+  gap: 40px;               /* Espacio entre cada lista */
+  flex-wrap: wrap;         /* Si hay más de 3, se acomodan en otra fila */
+    margin-top: 20px;
+}
+
+/* Cada grupo label + select */
+.select-group {
+    display: flex;
+        flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #cfbc64;   /* Combina con el dorado de tu header */
+    font-weight: bold;
+  min-width: 160px; /* Fuerza simetría */
+}
+
+/* Estilo base del select */
+.select-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 18px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Hover */
+.select-group select:hover {
+    background-color: #5a4fcf;
+    transform: scale(1.07);
+  border: 2px solid #cfbc64; /* Dorado */
+    box-shadow: 0 6px 16px rgba(90, 79, 207, 0.6);
+}
+
+/* Focus (clic) */
+.select-group select:focus {
+    outline: none;
+    background-color: #7b6ef6;
+  border: 2px solid #d60000; /* Rojo de tu nav */
+    box-shadow: 0 0 15px #d60000;
+}
+
+.icono-red {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociales h2 {
+    color: blue;
+    text-align: center;
+    font-size: 45px;
+}
