@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web</title>
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone | Tu tienda de tecnología</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/Contacto.html">Contacto</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/nosotros.html">Nosotros</a></li>    
-            </ul>
-        </nav>
-    </header>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="logo">⚡ TechZone</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/productos.html">Productos</a></li>
+        <li><a href="/nosotros.html">Nosotros</a></li>    
+        <li><a href="/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="formulario">
-        <h2>Conoce nuestro buscador de componentes</h2>
-
-        <form>
-      <div class="select-container">
-        <div class="select-group">
-          <label for="presupuesto">Presupuesto</label>
-          <select id="presupuesto">
-            <option value="">Seleccione...</option>
-            <option value="500">Menos de $500</option>
-            <option value="1000">Menos de $1000</option>
-            <option value="2000">Más de $2000</option>
-          </select>
-        </div>
-
-        <div class="select-group">
-          <label for="uso">Uso principal</label>
-          <select id="uso">
-            <option value="">Seleccione...</option>
-            <option value="ofimatica">Ofimática</option>
-            <option value="gaming">Gaming</option>
-            <option value="diseño">Diseño</option>
-          </select>
-        </div>
-
-        <!-- Lista futura -->
-        <div class="select-group">
-            <label for="extra">Rendimiento</label>
-            <select id="extra">
-            <option value="">Seleccione...</option>
-            <option value="1">Basico</option>
-            <option value="2">Medio</option>
-            <option value="3">Alto</option>
-            </select>
-        </div>
-        </div>
-        <button type="submit" class="submit">Buscar</button>
-        </form>      
+  <!-- Portada principal -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Potencia tu mundo digital</h1>
+      <p>Explora lo último en hardware, periféricos y tecnología de alto rendimiento.</p>
+      <a href="/productos.html" class="btn-hero">Explorar productos</a>
     </div>
+  </section>
+
+  <!-- Buscador de componentes -->
+  <section class="buscador">
+    <div class="formulario">
+      <h2>Encuentra tu configuración ideal ⚙️</h2>
+      <p>Personaliza tu equipo según tus necesidades y presupuesto.</p>
+
+      <form>
+        <div class="select-container">
+          <div class="select-group">
+            <label for="presupuesto">💰 Presupuesto</label>
+            <select id="presupuesto">
+              <option value="">Seleccione...</option>
+              <option value="500">Menos de $500</option>
+              <option value="1000">Menos de $1000</option>
+              <option value="2000">Más de $2000</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="uso">🎮 Uso principal</label>
+            <select id="uso">
+              <option value="">Seleccione...</option>
+              <option value="ofimatica">Ofimática</option>
+              <option value="gaming">Gaming</option>
+              <option value="diseño">Diseño</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="rendimiento">⚡ Rendimiento</label>
+            <select id="rendimiento">
+              <option value="">Seleccione...</option>
+              <option value="1">Básico</option>
+              <option value="2">Medio</option>
+              <option value="3">Alto</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="submit">Buscar configuración</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TechZone. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

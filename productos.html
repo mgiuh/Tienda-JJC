@@ -1,57 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web</title>
-    <link rel="stylesheet" href="CSS/style.css"> 
+    <title>Productos | TechZone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>TIENDA WEB</h1>
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo">⚡ TechZone</div>
         <nav>
-            <ul>
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/Contacto.html">Contacto</a></li>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/productos.html">Productos</a></li>
                 <li><a href="/nosotros.html">Nosotros</a></li>    
+                <li><a href="/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Contenido Principal -->
     <main>
-        <div class="title">
-            <h2>catalogo de productos</h2>
-        </div>
-        <div class="contenedor-producto">
-            <div class="producto-ssd">
-                <img src="https://img.terabyteshop.com.br/archive/2763799247/ssd-gigabyte-2256-12019-01.png" 
-                alt="producto 1">
-                <h3>SSD Gigabyte Aourus RGB 256GB M.2 2280 NVMe</h3>
-                <p>Marca: Gigabyte
-                    Modelo: GP-ASM2NE2256GTTDR
-                    Capacidad: 256 GB
-                    Formato: M.2 2280
-                    Velocidad secuencial de lectura: 3100 MB/s
-                    Velocidad secuencial de grabacion: 1050 MB/s
-                    Lectura aleatoria IOPS: 180 mil
-                    Gravacion aleatoria IOPS: 240 mil</p>
-                <p class="precio">$277.000</p>
+        <!-- Título de la página -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Catálogo de Productos</h1>
+                <p>Descubre nuestra selección de componentes de alta tecnología</p>
             </div>
-            <div class="producto-intel">
-                <img src="file:///C:/Users/Tecnica11%C2%B0/Pictures/intel%201.png" 
-                alt="producto 2">
-                <h3>Procesador Intel Core I7 13700F 2.1GHZ, 13ª Generacion</h3>
-                <p>Marca: Intel
-                   Modelo: BX8071513700F
-                   Nucleos: 16 nucleos(8P+8E)
-                   Hilos: 24
-                   Tamaño maximo de memoria (segun el tipo de memoria): 128 GB
-                   Tipos de memoria: DDR5 MT / s, DDR4 MT / s 
-                   Numero Maximo de memoria: 20
-                   Potencia base del procesador: 65 W 
-                <p class="Precio">$1.750.000</p>
-            </div>                   
-            
+        </section>
 
+        <!-- Contenedor de productos -->
+        <section class="productos-section">
+            <div class="contenedor-productos">
+                
+                <!-- Producto 1: SSD -->
+                <article class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://img.terabyteshop.com.br/archive/2763799247/ssd-gigabyte-2256-12019-01.png" 
+                             alt="SSD Gigabyte Aorus RGB 256GB">
+                    </div>
+                    <div class="producto-info">
+                        <h3>SSD Gigabyte Aorus RGB 256GB M.2 2280 NVMe</h3>
+                        <ul class="especificaciones">
+                            <li><strong>Marca:</strong> Gigabyte</li>
+                            <li><strong>Modelo:</strong> GP-ASM2NE2256GTTDR</li>
+                            <li><strong>Capacidad:</strong> 256 GB</li>
+                            <li><strong>Formato:</strong> M.2 2280</li>
+                            <li><strong>Velocidad de lectura:</strong> 3100 MB/s</li>
+                            <li><strong>Velocidad de escritura:</strong> 1050 MB/s</li>
+                            <li><strong>Lectura aleatoria IOPS:</strong> 180 mil</li>
+                            <li><strong>Escritura aleatoria IOPS:</strong> 240 mil</li>
+                        </ul>
+                        <p class="precio">$277.000</p>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
+                </article>
 
+                <!-- Producto 2: Procesador Intel -->
+                <article class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_921172-MLU72743503923_112023-F.webp" 
+                             alt="Procesador Intel Core i7 13700F">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Procesador Intel Core i7 13700F 2.1GHz, 13ª Generación</h3>
+                        <ul class="especificaciones">
+                            <li><strong>Marca:</strong> Intel</li>
+                            <li><strong>Modelo:</strong> BX8071513700F</li>
+                            <li><strong>Núcleos:</strong> 16 núcleos (8P+8E)</li>
+                            <li><strong>Hilos:</strong> 24</li>
+                            <li><strong>Memoria máxima:</strong> 128 GB</li>
+                            <li><strong>Tipos de memoria:</strong> DDR5 / DDR4</li>
+                            <li><strong>Canales de memoria:</strong> 2</li>
+                            <li><strong>TDP:</strong> 65 W</li>
+                        </ul>
+                        <p class="precio">$1.750.000</p>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 3: Tarjeta Gráfica -->
+                <article class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://www.profesionalreview.com/wp-content/uploads/2023/02/NVIDIA-GeForce-RTX-4070-Ti.jpg" 
+                             alt="NVIDIA GeForce RTX 4070 Ti">
+                    </div>
+                    <div class="producto-info">
+                        <h3>NVIDIA GeForce RTX 4070 Ti 12GB GDDR6X</h3>
+                        <ul class="especificaciones">
+                            <li><strong>Marca:</strong> NVIDIA</li>
+                            <li><strong>Arquitectura:</strong> Ada Lovelace</li>
+                            <li><strong>Memoria:</strong> 12GB GDDR6X</li>
+                            <li><strong>CUDA Cores:</strong> 7680</li>
+                            <li><strong>Boost Clock:</strong> 2610 MHz</li>
+                            <li><strong>Ray Tracing:</strong> Sí (3ra Gen)</li>
+                            <li><strong>DLSS:</strong> 3.0</li>
+                            <li><strong>TDP:</strong> 285W</li>
+                        </ul>
+                        <p class="precio">$3.200.000</p>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 4: RAM -->
+                <article class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://m.media-amazon.com/images/I/51xKJV7dP4L._AC_SL1500_.jpg" 
+                             alt="Corsair Vengeance RGB 32GB">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Corsair Vengeance RGB 32GB (2x16GB) DDR5 6000MHz</h3>
+                        <ul class="especificaciones">
+                            <li><strong>Marca:</strong> Corsair</li>
+                            <li><strong>Capacidad:</strong> 32GB (2x16GB)</li>
+                            <li><strong>Tipo:</strong> DDR5</li>
+                            <li><strong>Frecuencia:</strong> 6000 MHz</li>
+                            <li><strong>Latencia:</strong> CL36</li>
+                            <li><strong>RGB:</strong> Sí (iCUE compatible)</li>
+                            <li><strong>Voltaje:</strong> 1.35V</li>
+                            <li><strong>Perfil XMP:</strong> 3.0</li>
+                        </ul>
+                        <p class="precio">$680.000</p>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 TechZone. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
